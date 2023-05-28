@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>TMB - GroetGenerator</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">TMB GroetGenerator</h1>
+    </header>
+    <section class="content d-flex">
+        <div class="info-box content--child">
+            <h2 class="info-heading">Ik zoek een inclusieve groet...</h2>
+            <div class="user-box">
+                <div class="user-box--image">
+                    <img src="assets/img/person.jpg" alt="image of a person" />
+                </div>
+                <div class="user-box--user u-center">Raaf de Rooij, hij/die</div>
+            </div>
+        </div>
+        <div class="generator content--child flex-grow-1">
+            <form>
+                <div class="input-group d-flex justify-evenly">
+                    <div class="input-group--item">
+                        <label>
+                            <span>Voor wie?</span>
+                            <select name="who">
+                                <option>Lorem ipsum</option>
+                                <option>dolor sit amet</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="input-group--item">
+                        <label>
+                            <span>Welke sfeer?</span>
+                            <select name="occasion">
+                                <option>consectetur adipiscing</option>
+                                <option>elit, Donec</option>
+                                <option>velit justo</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group u-center">
+                    <button type="submit"><span class="button--text">Hit Me!</span></button>
+                </div>
+                <div class="output d-none">
+                    <div class="output-text">consectetur adipiscing</div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="assets/app.js"></script>
+</body>
+</html>
