@@ -5,14 +5,14 @@ if (form == []) {
 
 let items = {
     "Lorem ipsum": {
-        "consectetur adipiscing": "Optie 1",
-        "elit, Donec": "Optie 2",
-        "velit justo": "Optie 3",
+        "consectetur adipiscing": ["Optie 1"],
+        "elit, Donec": ["Optie 2"],
+        "velit justo": ["Optie 3"],
     },
     "dolor sit amet": {
-        "consectetur adipiscing": "Optie 4",
-        "elit, Donec": "Optie 5",
-        "velit justo": "Optie 6",
+        "consectetur adipiscing": ["Optie 4"],
+        "elit, Donec": ["Optie 5"],
+        "velit justo": ["Optie 6A", "Optie 6B"],
     }
 }
 
@@ -28,7 +28,9 @@ form.addEventListener('submit', function(e) {
     if (who in items) {
         if (occasion in items[who]) {
             setTimeout(function(){
-                showResult(items[who][occasion]);
+                let possibilities = items[who][occasion];
+                let randomItem = possibilities[Math.floor(Math.random() * possibilities.length)]
+                showResult(randomItem);
                 e.submitter.classList.remove('button--loading');
             }, randomIntFromInterval(100, 1500));
 
