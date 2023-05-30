@@ -1,7 +1,7 @@
 :root {
     --background-color: #202125;
     --text-color: #fafafc;
-    --accent-color: #a62524;
+    --accent-color: #d2252b;
     --underline-offset: 4rem;
 }
 html {
@@ -91,7 +91,7 @@ select {
 }
 
 button {
-    background: #cb171b;
+    background: var(--accent-color);
     border: none;
     border-radius: .25rem;
     margin: 5rem 0;
