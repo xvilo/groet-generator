@@ -231,4 +231,13 @@ button {
     .info-heading {
         font-size: 3rem;
     }
+
+    .input-group--item {
+        width: 100%
+    }
+
+    .output-text {
+        width: 100%;
+        margin: -2rem 0 2rem 0;
+    }
 }
