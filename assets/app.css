@@ -148,6 +148,10 @@ button {
     display: none;
 }
 
+.visibility-hidden {
+    visibility: hidden;
+}
+
 .button--loading .button--text {
     visibility: hidden;
     opacity: 0;

@@ -30,13 +30,18 @@ form.addEventListener('submit', function(e) {
     let who = formData.get('who');
     let occasion = formData.get('occasion');
 
+    if (who === null || occasion === null) {
+        stopLoading(e.submitter);
+        return;
+    }
+
     if (who in items) {
         if (occasion in items[who]) {
             setTimeout(function(){
                 let possibilities = items[who][occasion];
                 let randomItem = possibilities[Math.floor(Math.random() * possibilities.length)]
                 showResult(randomItem);
-                e.submitter.classList.remove('button--loading');
+                stopLoading(e.submitter);
             }, randomIntFromInterval(250, 1500));
 
             return;
@@ -44,14 +49,18 @@ form.addEventListener('submit', function(e) {
     }
 });
 
+function stopLoading(item) {
+    item.classList.remove('button--loading');
+}
+
 function showResult(text) {
     document.querySelector('.output-text').innerText = text;
-    document.querySelector('.output').classList.remove('d-none');
+    document.querySelector('.output').classList.remove('visibility-hidden');
 }
 
 function hide() {
     document.querySelector('.output-text').innerText = '';
-    document.querySelector('.output').classList.add('d-none');
+    document.querySelector('.output').classList.add('visibility-hidden');
 }
 
 function randomIntFromInterval(min, max) {
