@@ -4,12 +4,12 @@ if (form == []) {
 }
 
 let items = {
-    "Verbonden": {
+    "Enthousiast": {
         "Gezellig": ['Lieve Feestbeesten', 'Lieve Vrienden', 'Lieve Kameraden', 'Dolle Feestbeesten', 'Dolle Vrienden', 'Dolle Kameraden', 'Amicale Feestbeesten', 'Amicale Vrienden', 'Amicale Kameraden'],
         "Neutraal": ['Lieve Mensen', 'Lieve Personen', 'Lieve Individuen', 'Dolle Mensen', 'Dolle Personen', 'Dolle Individuen', 'Amicale Mensen', 'Amicale Personen', 'Amicale Individuen'],
         "Officieel": ['Lieve Collega\'s', 'Lieve Medewerkers', 'Lieve Zakenpartners', 'Dolle Collega\'s', 'Dolle Medewerkers', 'Dolle Zakenpartners', 'Amicale Collega\'s', 'Amicale Medewerkers', 'Amicale Zakenpartners'],
     },
-    "Onzijdig": {
+    "Objectief": {
         "Gezellig": ['Aangename Collega\'s', 'Aangename Medewerkers', 'Aangename Zakenpartners', 'Adequate Collega\'s', 'Adequate Medewerkers', 'Adequate Zakenpartners', 'Bestaande Collega\'s', 'Bestaande Medewerkers', 'Bestaande Zakenpartners'],
         "Neutraal": ['Aangename Mensen', 'Aangename Personen', 'Aangename Individuen', 'Adequate Mensen', 'Adequate Personen', 'Adequate Individuen', 'Bestaande Mensen', 'Bestaande Personen', 'Bestaande Individuen'],
         "Officieel":['Aangename Collega\'s', 'Aangename Medewerkers', 'Aangename Zakenpartners', 'Adequate Collega\'s', 'Adequate Medewerkers', 'Adequate Zakenpartners', 'Bestaande Collega\'s', 'Bestaande Medewerkers', 'Bestaande Zakenpartners'],
