@@ -193,8 +193,9 @@ button {
 
 .email-sub > a:visited,
 .email-sub > a:hover,
-.email-sub > a:active {
-    color: var(--text-color);
+.email-sub > a:active,
+.email-sub > a:-webkit-any-link {
+    color: var(--text-color)!important;
 }
 
 @media only screen and (min-width: 1100px) {
