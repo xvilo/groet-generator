@@ -55,6 +55,7 @@ function stopLoading(item) {
 
 function showResult(text) {
     document.querySelector('.output-text').innerText = text;
+    document.querySelector('.email-sub > a').href = 'mailto:?body=' + encodeURIComponent(text) + '%2C%0A%0A%5Bemail%20hier%5D'
     document.querySelector('.output').classList.remove('visibility-hidden');
 }
 
