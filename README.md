@@ -1,3 +1,3 @@
 # Groet Generator
 
-Demo [it online](https://xvilo.github.io/groet-generator/)
+Demo it online [at groetgenerator.nl](https://groetgenerator.nl)
