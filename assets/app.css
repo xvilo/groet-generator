@@ -191,10 +191,11 @@ button {
     color: var(--text-color);
 }
 
-.email-sub > a:visited,
-.email-sub > a:hover,
-.email-sub > a:active,
-.email-sub > a:-webkit-any-link {
+.email-sub a,
+.email-sub a:visited,
+.email-sub a:hover,
+.email-sub a:active,
+.email-sub a:-webkit-any-link {
     color: var(--text-color)!important;
 }
 
